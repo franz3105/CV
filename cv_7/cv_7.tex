@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{ragged2e}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Francesco} % Your first name
+\familyname{Preti} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{fraz. Piazzola 173}{38020 Rabbi (TN), Italy}
+\mobile{+43 660 6478038}
+\phone{+39 0463 985114}
+\email{franz3105@gmail.com, francesco.preti@student.uibk.ac.at}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{"Natura semina scienti\ae \  nobis dedit, scientiam non dedit" - Seneca}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{Dr. Xiaoguang Dong}{Max Planck Institute for Intelligent Systems \\123 Pleasant Lane\\Tübingen, Germany} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Dr. Xiaoguang Dong,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\justify
+I am a master's student in physics at the University of Innsbruck and I am about to complete my studies in May. 
+
+In my master’s studies, I mainly focused on quantum information and quantum optics, but I also kept an interdisciplinary approach to physics, taking courses in continuum mechanics, active matter and machine learning. More specifically, as part of the active matter course, I developed a simulation of the Vicsek model to study swarming behaviour.
+
+During the last year, I focused on machine learning models applied to quantum physics and quantum information processing by joining Hans Briegel’s group for my master’s thesis. I worked on the Projective Simulation model (\url{https://projectivesimulation.org/}), a physics-inspired framework developed for AI applications. The goal of my thesis is combining this framework with typical neural network architectures and applying it to quantum mechanical problems. More specifically, I developed a reinforcement learning environment for quantum circuits, where an intelligent agent, by interacting with the environment, aims at constructing different types of quantum states and gates. The agent makes use of feedforward neural networks and recurrent networks to achieve its goal. 
+
+My actual goal is to continue doing research connected to physics and machine learning, e.g. by pursuing a PhD. In-between, I would like to acquire some additional knowledge in machine learning-related simulations. In this perspective, this internship would be a good opportunity for me to acquire further knowledge in the field.
+ 
+Thank you in advance for your consideration.
+
+
+\makeletterclosing % Print letter signature
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2017--2020}{Masters of Science, Physics}{University of Innsbruck}{Innsbruck, Austria}{}{Specialized in Quantum Physics}  % Arguments not required can be left empty
+\cventry{2014--2017}{Bachelor of Science, Physics}{University of Innsbruck}{Innsbruck, Austria}{\textit{Overall grade -- 1.2}}{Specialized in Quantum Physics}
+
+\section{Masters Thesis}
+
+\cvitem{Title}{\emph{Deep Projective Simulation and State Preparation}}
+\cvitem{Supervisors}{Prof. Dr. Hans J. Briegel}
+\cvitem{Description}{In this thesis I adress the possibility of performing quantum circuit design with (deep) reinforcement learning methods.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+
+%------------------------------------------------
+
+\cventry{Aug 2019-- Oct 2019}{Summer Intern}{\textsc{Bosch}}{Vienna}{}{Software development - Tool development departement}
+\cventry{Oct 2018 -- Jan 2019}{Teaching Assistant}{\textsc{University of Innsbruck}}{Innsbruck}{}{Teaching assistant in Mathematical Methods for Physics II}
+\cventry{Oct 2016 -- Jan 2017}{Teaching Assistant}{\textsc{University of Innsbruck}}{Innsbruck}{}{Teaching assistant in Theoretical Physics I}
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2016, 2017}{Performance-based scholarship - University of Innsbruck}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{\textsc{C}, \textsc{julia}, \textsc{matlab}}
+\cvitem{Intermediate}{C++, Git, \LaTeX, Mathematica, Linux}
+\cvitem{Advanced}{\textsc{python}, Machine Learning}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Other Activities}
+	\cventry{Jul 2016}{Summer school on Ultracold atoms}{Innsbruck, Austria}{}{}.
+	\cventry{17 -- 21 Sep 2018}{QML, Quantum machine learning conference}{Innsbruck, Austria}{}{}.
+	\cventry{23 Feb 2018}{PLANKS Physics competition}{Trento, Italy}{}{}.
+	\cventry{Feb 2019}{Google Hash Code 2019}{Innsbruck, Austria}{}{}.
+	\cventry{Mar 04--08, 2019}{ESGI, European study group with industry}{Innsbruck, Austria}{}{}.
+	\cventry{Feb 10--20, 2020}{Winter school Machine Learning in Physics}{Vienna, Austria}{}{}.
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Italian}{Mothertongue}{}
+\cvitemwithcomment{English}{Advanced}{}
+\cvitemwithcomment{German}{Advanced}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Writing}{Running}
+\cvlistdoubleitem{Politics}{Economy}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
